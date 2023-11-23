@@ -35,7 +35,7 @@ variable "display_name" {
 variable "settings" {
   type        = string
   description = "A string of settings to apply to code-server."
-  default     = {}
+  default     = ""
 }
 
 variable "folder" {
