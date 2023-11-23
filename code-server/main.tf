@@ -82,7 +82,7 @@ resource "coder_script" "code-server" {
     LOG_PATH : var.log_path,
     INSTALL_PREFIX : var.install_prefix,
     // This is necessary otherwise the quotes are stripped!
-    SETTINGS : replace(replace(replace(jsonencode(var.settings), "\"", "\\\""),"\"\u005D","\u005D\\\""),"\u005B\","\\\"\u005B")
+    SETTINGS : replace(replace(replace(jsonencode(var.settings), "\"", "\\\""),"\"\u005d","\u005d\\\""),"\u005b\","\\\"\u005b")
   run_on_start = true
 }
 
