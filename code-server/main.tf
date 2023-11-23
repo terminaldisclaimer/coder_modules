@@ -33,8 +33,8 @@ variable "display_name" {
 }
 
 variable "settings" {
-  type        = map(string)
-  description = "A map of settings to apply to code-server."
+  type        = string
+  description = "A string of settings to apply to code-server."
   default     = {}
 }
 
