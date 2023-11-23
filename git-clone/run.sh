@@ -28,8 +28,8 @@ fi
 if [ ! -d "$CLONE_PATH" ]; then
   echo "Creating directory $CLONE_PATH..."
   sudo mkdir -p "$CLONE_PATH"
-  sudo chown -R $(whoami) "$CLONE_PATH"
-  sudo chmod -R 777 "$CLONE_PATH"
+  sudo chown -Rf $(whoami) "$CLONE_PATH"
+  sudo chmod -Rf 777 "$CLONE_PATH"
 fi
 
 # Check if the directory is empty
