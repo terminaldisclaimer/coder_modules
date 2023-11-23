@@ -27,7 +27,7 @@ fi
 # and if not, create it
 if [ ! -d "$CLONE_PATH" ]; then
   echo "Creating directory $CLONE_PATH..."
-  mkdir -p "$CLONE_PATH"
+  sudo mkdir -p "$CLONE_PATH"
   sudo chown -R $(whoami) "$CLONE_PATH"
   sudo chmod +rwx "$CLONE_PATH"
 fi
